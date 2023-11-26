@@ -12,7 +12,7 @@
 </head>
 <body>
     <aside>
-        <img src="{% static 'main/img/hihi.jpg' %}" height="80px" width="80px">
+        <img class="imgg" src="{% static 'main/img/hihi.jpg' %}">
         <span class="logo">MAKSON</span>
         <h3>Navigation</h3>
         <ul>
@@ -26,6 +26,14 @@
     <main>
         {% block content %}
         {% endblock %}
+
+        {% if user.is_authenticated %}
+        <p>Hi {{ user.username }} !</p>
+        <p><a href='{% url 'logout' %}'>Log out</a></p>
+      {% else %}
+        <p>You are not logged in.</p>
+        <a href="{% url 'login' %}">Log In</a>
+      {% endif %}
     </main>
 </body>
 

@@ -13,22 +13,28 @@ aside{
     border-right: 5px solid whitesmoke;
 }
 
-
+aside .imgg{
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
 aside img{
-    width: 241px;
-    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: auto;
     float: left;
     margin-left: -10px;
-    margin-top: -20px;
+    margin-top: -100px;
 }
 
 aside .logo{
     color:#323232;
     font-size: 35px;
-    margin-left: 36px;
+    margin-left: 23px;
     font-weight: bold;
     position: relative;
-    top: -113px;
+    top: -350px;
 }
 
 aside h3{
