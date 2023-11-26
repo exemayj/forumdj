@@ -1,11 +1,12 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}{{ title }}{% endblock%}
+{% block title %}About{% endblock%}
 
 {% block content%}
     <div class='features'>
-        <h1>{{ title }}</h1>
-        <p>hehhehehhehehehhehhehehheh</p>
-        <button class='btn btn-warning'>On page About</button>
+        <h1>Погода</h1>
+
+        <b>Город:</b> Санкт-Петербург <br>
+        <b>Температура:</b> {{current_temp}}<sup>o</sup><br>
     </div>
 {% endblock %}
