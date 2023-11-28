@@ -16,7 +16,7 @@ def index(request):
 
 
 def get_weather():
-    owm = OWM('39adf2a129e3475f7055c32a84a08296')
+    owm = OWM('Api key')
     mgr = owm.weather_manager()
 
     observation = mgr.weather_at_place('Saint Petersburg')
